@@ -27,7 +27,7 @@ corresponding to the following MAC-level statistics:
 * '*PLR*' is the Packet Loss Rate, i.e. the percentage of Lost frames withing a particular observation interval;
 * '*throughput*' is the aggregated throughput of all sending nodes within a particular observation interval;
 * '*Density*' is the number of nodes that were active during the experiment observation interval;
-* '*COR*' is the Channel Occupancy Ration which indicates the level of interference generated, e.g. a level of 20 indicates a interference pattern generated 20% of a time period, i.e. transmitting a modulated carrier for 2ms, followed by a 8 ms idle period- repeated during the experiment.
+* '*COR*' is the Channel Occupancy Ratio which indicates the level of interference generated, e.g. a level of 20 indicates a interference pattern generated 20% of a time period, i.e. transmitting a modulated carrier for 2ms, followed by a 8 ms idle period- repeated during the experiment.
 
 
 The folder *Testing_data* contains measurements from additional experiments that were used for testing the developed
