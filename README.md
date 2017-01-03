@@ -13,7 +13,7 @@ We used a USRP B210 to generate cofacentrollable interference patterns by transm
 
 **Data collection**.
 To simplify experiment control and data collection we created a global control program on the global controller using the Unified Programming Interfaces (UPIs) developed by the WiSHFUL project (http://www.wishful-project.eu/documents). We  run  several  experiments  with  the  aforementioned setups and measured several aspects of the MAC-level
-performance, while the system was operating (around 18 hours).
+performance, while the system was operating (around 21 hours).
 
 For more details about the datasets please see the README file in the *datasets* folder. 
 
