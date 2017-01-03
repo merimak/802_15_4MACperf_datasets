@@ -45,11 +45,25 @@ This Poster publication is accepted for publiction at the EWSN 2017.
 
 ##Cite dataset
 
-To cite our datasets please use:
+To cite our dataset please use the following doi: 
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.228613.svg)](https://doi.org/10.5281/zenodo.228613)
+
 
 ```
-Merima Kulin, Eli De Poorter, Tarik Kazaz and Ingrid Moerman, 
-The MAC-level performance dataset for 802.15.4 WSNs. Retrieved from https://github.com/merimak/802_15_4MACperf_datasets
+@misc{merima_kulin_2017_228613,
+  author       = {Merima Kulin and
+                  Eli de Poorter and
+                  Tarik Kazaz and
+                  Ingrid Moerman},
+  title        = {{merimak/802_15_4MACperf_datasets: MAC-level 
+                   performance dataset for 802.15.4 WSNs}},
+  month        = jan,
+  year         = 2017,
+  doi          = {10.5281/zenodo.228613},
+  url          = {https://doi.org/10.5281/zenodo.228613}
+}
+
 ```
 
 ##Acknowledgements
