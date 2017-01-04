@@ -6,8 +6,8 @@ The data is also available for participants of the eWINE Grand Challenge: https:
 
 **Experimental setup**.
 To  understand  the  MAC-level packet delivery  performance several experiments in the wilab2 testbed have been set up.
-We used up to 30 RM090 nodes with an IEEE 802.15.4 radio organized in a star-like network topology, as shown on the figure below. All nodes use a CSMA/CA MAC protocol and periodically generate a 100 B message to a single receiver located in the center of the topology. The transmission power  is  set  to  the  maximum, i.e. 5dBm,  to  ensure all nodes are in communication range.  To incorporate all factors that impact the MAC performance we setup several experiments varying the number of sending nodes (2-30 nodes), and the application traffic load (1pckt/2, 1pckt/, 2pckts/, 4pckts/s, 8pckts/s, 16pckts/s and 64pckts/s).
-We used a USRP B210 to generate cofacentrollable interference patterns by transmitting a modulated carrier for 2ms, followed by a 8ms idle period.
+We used 28 RM090 nodes with an IEEE 802.15.4 radio organized in a star-like network topology, as shown on the figure below. All nodes use a CSMA/CA MAC protocol and periodically generate a 100 B message to a single receiver located in the center of the topology. The transmission power  is  set  to  the  maximum, i.e. 5dBm,  to  ensure all nodes are in communication range.  To incorporate all factors that impact the MAC performance we setup several experiments varying the number of sending nodes (2-28 nodes), and the application traffic load (1pckt/2, 1pckt/, 2pckts/, 4pckts/s, 8pckts/s, 16pckts/s and 64pckts/s).
+We used a USRP B210 to generate controllable interference patterns by transmitting a modulated carrier for 2ms, followed by a 8ms idle period.
 
 ![experiment_setup](https://cloud.githubusercontent.com/assets/7999611/21597995/51e8ae4a-d154-11e6-8984-554d0109b8b1.png)
 
@@ -41,7 +41,7 @@ archivePrefix = "arXiv",
   adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
 ```
-This Poster publication is accepted for publiction at the EWSN 2017.
+This Poster publication is accepted for publiction in the Proceedings of the 2017 International Conference on Embedded Wireless Systems and Networks (EWSN), Uppsala, Sweden — February  20- 22, 2017.
 
 ##Cite dataset
 
@@ -56,7 +56,7 @@ To cite our dataset please use the following doi:
                   Eli de Poorter and
                   Tarik Kazaz and
                   Ingrid Moerman},
-  title        = {{merimak/802_15_4MACperf_datasets: MAC-level 
+  title        = {{merimak/802\_15\_4MACperf\_datasets: MAC-level 
                    performance dataset for 802.15.4 WSNs}},
   month        = jan,
   year         = 2017,
