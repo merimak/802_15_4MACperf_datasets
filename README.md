@@ -56,9 +56,8 @@ To cite our dataset please use the following doi:
                   Eli de Poorter and
                   Tarik Kazaz and
                   Ingrid Moerman},
-  title        = {{merimak/802\_15\_4MACperf\_datasets: MAC-level 
-                   performance dataset for 802.15.4 WSNs}},
-  month        = jan,
+  title        = {MAC-level performance dataset for 802.15.4 WSNs},
+  month        = Jan,
   year         = 2017,
   doi          = {10.5281/zenodo.228613},
   url          = {https://doi.org/10.5281/zenodo.228613}
