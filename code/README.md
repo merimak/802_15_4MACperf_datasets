@@ -6,10 +6,12 @@ This folder contains additional code used for model testing and feature generati
 
 
 *Feature Generator*
+
 The Feature Generator.py extracts features from the experimental data about MAC performance statistics. The correct path to the experimental data has to be set within the script.
 
 
 *Test Model*
+
 To evaluate the provided serialized neural network model, the testModel.py script can be used in the following way:
 
 ```
