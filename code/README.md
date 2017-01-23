@@ -21,18 +21,16 @@ python MACstatsFeatureGenerator.py -d “Path to data”
 ```
 ![pre_process](https://cloud.githubusercontent.com/assets/7999611/22187164/c1465528-e101-11e6-9f2d-ab94836bf3f0.jpg)
 
-## Create MAC-level performance predictor
-
+## *Create MAC-level performance predictor*
+Train the MAC-level performance predictor:
 ```
 java -classpath weka.jar weka.classifiers.functions.MultilayerPerceptron -t “Path to dataset" -L 0.1 -N 2000 -H 10 -d “Path to model"
 ```
 ![genmodel](https://cloud.githubusercontent.com/assets/7999611/22187171/cf2cda7c-e101-11e6-8684-41ebd0e7b8d4.jpg)
 
-
 ## *Evaluate Model*
 
 To evaluate the provided serialized neural network model with trace-based simulation, the testModel.py script can be used in the following way:
-
 ```
 python -p "Path to Weka application folder" -m "Path to Weka serialized model object" -d "Path to testing set"
 ```
