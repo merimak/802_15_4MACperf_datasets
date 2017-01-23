@@ -15,7 +15,7 @@ import argparse
 
 def load_dataset(path, tableName):
     """
-        Loads observations
+        Loads observations as Pandas Dataframe
         
         Args:
             path (str): path to the data
