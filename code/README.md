@@ -13,6 +13,7 @@ To generate experimental data for MAC statistics the following steps are involve
 
 ![datacollection](https://cloud.githubusercontent.com/assets/7999611/22187153/9311db1e-e101-11e6-889e-95d2bbc69e05.JPG)
 
+
 ## *Feature Generator*
 
 To extract MAC-level performance statistics the MACperfFeatureGenerator.py script is used. The scripts takes the path to the experimental data as input argument.
@@ -21,12 +22,14 @@ python MACstatsFeatureGenerator.py -d “Path to data”
 ```
 ![pre_process](https://cloud.githubusercontent.com/assets/7999611/22187164/c1465528-e101-11e6-9f2d-ab94836bf3f0.jpg)
 
+
 ## *Create MAC-level performance predictor*
 Train the MAC-level performance predictor:
 ```
 java -classpath weka.jar weka.classifiers.functions.MultilayerPerceptron -t “Path to dataset" -L 0.1 -N 2000 -H 10 -d “Path to model"
 ```
 ![genmodel](https://cloud.githubusercontent.com/assets/7999611/22187171/cf2cda7c-e101-11e6-8684-41ebd0e7b8d4.jpg)
+
 
 ## *Evaluate Model*
 
