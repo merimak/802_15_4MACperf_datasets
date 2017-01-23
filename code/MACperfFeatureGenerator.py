@@ -74,7 +74,7 @@ if __name__ == '__main__':
 
     #Path to the collected data
     #dirpath="/home/mkulin/Desktop/eWINE/Experiments/Repository/example/";
-    training_file_list=[my_args.datapath+filename for filename in os.listdir(my_args.datapath)]
+    file_list=[my_args.datapath+filename for filename in os.listdir(my_args.datapath)]
     
     #Features extraction
     new=pd.DataFrame(columns=['NumOfReceived','PRR','packetLoss','PLR','throughput', 'IPI', 'Density', 'COR'])
@@ -89,7 +89,7 @@ if __name__ == '__main__':
     #print(new.shape)
 
     exportpath="/home/mkulin/Desktop/eWINE/Experiments/Repository/Testing/"
-    new[['NumOfReceived','PRR','packetLoss','PLR','throughput', 'IPI', 'Density']].to_csv(exportpath+'802_15_4_perf_30s.csv', sep=',', index=False)
+    new[['NumOfReceived','PRR','packetLoss','PLR','throughput', 'IPI', 'Density', 'COR']].to_csv(exportpath+'802_15_4_perf_30s.csv', sep=',', index=False)
     print("Generated feature vectors!")
 
 
