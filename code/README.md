@@ -7,20 +7,30 @@ The generic flow for modeling the MAC-level performance predictor is described b
 ## *Data collection*
 
 To generate experimental data for MAC statistics the following steps are involved:
-* Create WiSHFUL control program
-* Register events for which data has to be collected
-* Dump data for post-processing (SQLite, CSV, MySQL...)
+* Create WiSHFUL control program (configure network and radio parameters)
+* Register events for which data has to be collected (MAC statistics)
+* Define scenario
+* Define monitoring duration
+* Dump data for post-processing (SQLite, CSV, MySQL, OML...)
 
 ![datacollection](https://cloud.githubusercontent.com/assets/7999611/22187153/9311db1e-e101-11e6-889e-95d2bbc69e05.JPG)
 
 
 ## *Feature Generator*
 
-To extract MAC-level performance statistics the MACperfFeatureGenerator.py script is used. The scripts takes the path to the experimental data as input argument.
+### *Offline Feature Extraction*
+
+To extract MAC-level performance statistics from the collected the *MACperfFeatureGenerator.py* script is used. The script takes the path to the experimental data as input argument.
 ```
 python MACstatsFeatureGenerator.py -d “Path to data”
 ```
 ![pre_process](https://cloud.githubusercontent.com/assets/7999611/22187164/c1465528-e101-11e6-9f2d-ab94836bf3f0.jpg)
+
+### *On-the-fly Feature Extraction*
+
+MAC-level performance statistics can be automatically extracted on-the-fly in the data collection phase.  
+
+![otf_featuregen](https://cloud.githubusercontent.com/assets/7999611/22334205/223a24ba-e3da-11e6-8f50-8c96124d5129.jpg)
 
 
 ## *Create MAC-level performance predictor*
