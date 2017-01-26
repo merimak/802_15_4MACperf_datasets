@@ -1,8 +1,8 @@
 # Dataset description
 
 The 802.15.4 MAC layer performance datasets consist of 12 files, corresponding to measurements from different observation
-interval granularity used in the experiments, located in the folder *Training_data*. The folder contains a fine-granularity
-dataset with short-term MAC statistics over a time interval of 5 seconds, and several coarse-granularity 
+interval granularity used in the experiments, located in the folder [*Training_data*](Training_data/). The folder contains a fine-granularity
+dataset with short-term MAC statistics over a time interval of 5 seconds, and several derived coarse-granularity 
 dataset with long-term MAC statistics over 10, 15, 20, 25, 30, 35, 40, 45, 50 and 55*s*.
 In particular, it contains the following datasets:
 * MAC-level statistics over a time interval of 5 seconds (i.e. 802_15_4_MACperf_5s.csv)
@@ -31,6 +31,5 @@ corresponding to the following MAC-level statistics:
 * '*COR*' is the Channel Occupancy Ratio which indicates the level of interference generated, e.g. a level of 20 indicates a interference pattern generated 20% of a time period, i.e. transmitting a modulated carrier for 2ms, followed by a 8 ms idle period- repeated during the experiment.
 
 
-The folder *Testing_data* contains measurements from additional experiments that were used for testing the developed
-machine learning model in the publication. It has the same format as the aforementioned datasets, for a observation interval granularity of 30 seconds.
+The folder [*Testing_data*](Testing_data/) contains coarse-granularity measurements from a separate set of experiments that were used for testing the developed machine learning model in the publication. It has the same format as the aforementioned datasets, for a observation interval granularity of 30 seconds.
 
