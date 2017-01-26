@@ -31,5 +31,5 @@ corresponding to the following MAC-level statistics:
 * '*COR*' is the Channel Occupancy Ratio which indicates the level of interference generated, e.g. a level of 20 indicates a interference pattern generated 20% of a time period, i.e. transmitting a modulated carrier for 2ms, followed by a 8 ms idle period- repeated during the experiment.
 
 
-The folder [*Testing_data*](Testing_data/) contains coarse-granularity measurements from a separate set of experiments that were used for testing the developed machine learning model in the publication. It has the same format as the aforementioned datasets, for a observation interval granularity of 30 seconds.
+The folder [*Testing_data*](Testing_data/) contains coarse-granularity measurements from a separate set of experiments that were used for testing the developed machine learning model in the publication. It has the same format as the aforementioned datasets, with an observation interval granularity of 30 seconds.
 
