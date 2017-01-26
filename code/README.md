@@ -4,7 +4,7 @@ This folder contains additional code used for model testing and feature generati
 
 The generic flow for modeling the MAC-level performance predictor is described below.
 
-## *Data collection*
+## Data collection
 
 To generate experimental data for MAC statistics the following steps are involved:
 * Create WiSHFUL control program (configure network and radio parameters)
@@ -16,7 +16,7 @@ To generate experimental data for MAC statistics the following steps are involve
 ![datacollection](https://cloud.githubusercontent.com/assets/7999611/22187153/9311db1e-e101-11e6-889e-95d2bbc69e05.JPG)
 
 
-## *Feature Generator*
+## Feature Generator
 
 ### *Offline Feature Extraction*
 
@@ -28,12 +28,12 @@ python MACstatsFeatureGenerator.py -d “Path to data”
 
 ### *On-the-fly Feature Extraction*
 
-MAC-level performance statistics can be automatically extracted on-the-fly in the data collection phase.  
+MAC-level performance statistics can be automatically extracted on-the-fly in the data collection phase. The framework extension module will be soon available. 
 
 ![otf_featuregen](https://cloud.githubusercontent.com/assets/7999611/22334205/223a24ba-e3da-11e6-8f50-8c96124d5129.jpg)
 
 
-## *Create MAC-level performance predictor*
+## Create MAC-level performance predictor
 Train the MAC-level performance predictor:
 ```
 java -classpath weka.jar weka.classifiers.functions.MultilayerPerceptron -t “Path to dataset" -L 0.1 -N 2000 -H 10 -d “Path to model"
@@ -41,7 +41,7 @@ java -classpath weka.jar weka.classifiers.functions.MultilayerPerceptron -t “P
 ![genmodel](https://cloud.githubusercontent.com/assets/7999611/22187171/cf2cda7c-e101-11e6-8684-41ebd0e7b8d4.jpg)
 
 
-## *Evaluate Model*
+## Evaluate Model
 
 To evaluate the provided serialized neural network model with trace-based simulation, the testModel.py script can be used in the following way:
 ```
