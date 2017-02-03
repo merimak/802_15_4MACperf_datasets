@@ -47,6 +47,6 @@ To evaluate the provided serialized neural network model with trace-based simula
 ```
 python -p "Path to Weka application folder" -m "Path to Weka serialized model object" -d "Path to testing set"
 ```
-The script generates as output Figure 3 from the Poster paper.
+The script generates a performance graph showing the real vs. predicted instance.
 
 ![testmodel](https://cloud.githubusercontent.com/assets/7999611/22187173/d9e6da58-e101-11e6-973f-8b4ad5bd3a03.jpg)
