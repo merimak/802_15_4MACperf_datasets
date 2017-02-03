@@ -3,7 +3,6 @@ Created on Nov 2, 2016
 
 @author: Merima Kulin
 '''
-#Copy of Create_trainingset.py
 
 import pandas as pd
 from numpy import *
